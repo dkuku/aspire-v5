@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/local/bin/10-sync-acpi-intel.start &
