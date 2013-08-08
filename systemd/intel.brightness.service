@@ -3,7 +3,8 @@ Description=Fix for brightness regulation on some intel based laptops
 
 [Service]
 Type=forking
-ExecStart=/usr/local/bin/sync-acpi-intel.py 
+ExecStart=/usr/local/bin/sync-acpi-intel-daemon.py start 
+PIDFile=/var/run/sync-acpi-intel.pid
 
 [Install]
 WantedBy=multi-user.target
